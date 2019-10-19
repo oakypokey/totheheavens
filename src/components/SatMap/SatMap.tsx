@@ -16,8 +16,8 @@ interface SatelliteProps {
 const SatMap: React.FC = () => {
 
     const [currentPosition, setCurrentPosition] = React.useState<any>({coords:{
-        longtitude: 0,
-        lattitude: 0
+        longitude: 0,
+        latitude: 0
       }});
 
     let defaultProps = {
@@ -44,7 +44,8 @@ const SatMap: React.FC = () => {
           yesIWantToUseGoogleMapApiInternals
           onGoogleApiLoaded={getCoords}
         >
-          <Satellite type={0} lat={currentPosition.coords.latitude} lng={currentPosition.coords.longitude} text="WOooP!" />
+            <Satellite type={0} lat={currentPosition.coords.latitude} lng={currentPosition.coords.longitude} text="You are going to hunt me now!" />
+
         </GoogleMapReact>
         </div>
     );

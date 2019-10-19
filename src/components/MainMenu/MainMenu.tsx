@@ -1,5 +1,6 @@
 import React from 'react';
 import './MainMenu.css';
+import { Container, TextInput, Button, Icon } from 'nes-react';
 
 
 const Satellite: React.FC = () => {
@@ -9,8 +10,24 @@ const Satellite: React.FC = () => {
     }
 
     return(
-        <div>
-            <h1>Welcome Bitchesss!!!</h1>
+        <div className="login">
+            <h1>Ad Caelum</h1>
+            <Container title="Login">
+                <TextInput label="Username" placeholder="Buzz Aldrin" />
+                <TextInput label="Password" placeholder="**********" type="password" />
+                <Button className="sociallogin" primary>Login</Button>
+                <Button className="sociallogin">Sign Up</Button>
+                <br/>
+                <br/>
+                <br/>
+                <h1>------------------------</h1>
+                <h1>Social Login</h1>
+                <Icon className="sociallogin" icon="facebook" />
+                <Icon className="sociallogin" icon="google" />
+                <Icon className="sociallogin" icon="linkedin" />
+                <br />
+
+            </Container>
         </div>
     )
 }

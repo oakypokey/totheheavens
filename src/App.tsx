@@ -3,6 +3,7 @@ import './App.css';
 import { Container } from 'nes-react'
 import SatMap from './components/SatMap/SatMap'
 import MainMenu from './components/MainMenu/MainMenu'
+import Userprofile from './components/UserProfile/Userprofile';
 require('dotenv').config()
 
 
@@ -13,7 +14,7 @@ const App: React.FC = () => {
     <div className="App">
       <div className="container">
         <Container>
-          <MainMenu />
+          <SatMap />
         </Container>
       </div>
     </div>
