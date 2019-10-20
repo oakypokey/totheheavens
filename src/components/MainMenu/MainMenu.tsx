@@ -1,6 +1,8 @@
 import React from 'react';
 import './MainMenu.css';
 import { Container, TextInput, Button, Icon } from 'nes-react';
+//@ts-ignore
+import { Link } from 'react-router-dom'
 
 
 const Satellite: React.FC = () => {
@@ -15,7 +17,10 @@ const Satellite: React.FC = () => {
             <Container title="Login">
                 <TextInput label="Username" placeholder="Buzz Aldrin" />
                 <TextInput label="Password" placeholder="**********" type="password" />
+                <Link to="/profile">
                 <Button className="sociallogin" primary>Login</Button>
+                </Link>
+        
                 <Button className="sociallogin">Sign Up</Button>
                 <br/>
                 <br/>
